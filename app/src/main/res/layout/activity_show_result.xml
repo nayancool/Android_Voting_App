@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/walpaper"
+    tools:context=".ShowResult">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/aclonica"
+        android:text="RESULT"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="808dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="WINNER"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:hint="WINNER"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Result"
+        app:layout_constraintBottom_toTopOf="@+id/Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner"
+        app:layout_constraintVertical_bias="0.816" />
+</androidx.constraintlayout.widget.ConstraintLayout>
